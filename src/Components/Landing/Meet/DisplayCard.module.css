@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   transition: all ease-in 1s;
-  z-index: 1;
+  z-index: 45;
 }
 
 .popup-container .overlay-container {
@@ -20,6 +20,8 @@
   height: 100vh;
   position: absolute;
   opacity: 0.95;
+  top: 0;
+  left: 0;
 }
 
 .popup-container .card-container {

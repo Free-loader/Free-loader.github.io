@@ -100,8 +100,9 @@ function Meet() {
           </div>
         </div>
       </motion.div>
+      {card !== 0 && <DisplayCard data={{ card, closeCard }} />}
+
       <motion.div variants={RTL} initial="hidden" animate="visible" className={styles['identity-container']}>
-        {card !== 0 && <DisplayCard data={{ card, closeCard }} />}
         <div className={styles['row-1']}>
           {row1.map((peep, ind) => {
             return renderMini(ind, peep);
