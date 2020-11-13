@@ -1,0 +1,112 @@
+.ourworks {
+  background-image: url('../../Images/service.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.ourworks .heading2 {
+  text-align: center;
+  color: white;
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: var(--ThemeWhite);
+  font-family: var(--Roboto);
+  padding-bottom: 0;
+  z-index: 20;
+  margin-top: 5rem;
+  margin-bottom: -4rem;
+}
+
+.ourworks .line {
+  width: 100%;
+  color: white;
+  border: 0.3rem dashed #fff;
+  border-style: none none dashed;
+}
+
+.ourworks .carouselWrapper {
+  height: 70vh;
+}
+
+.ourworks .image {
+  width: 10rem;
+  height: 72px;
+  transform: translate(-48%, -35%);
+  z-index: 999999;
+  margin: 2rem;
+  object-fit: contain;
+  padding-left: 3.7rem;
+  padding-top: 2rem;
+}
+
+.ourworks .pic {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 8.5rem;
+  height: 8.5rem;
+  z-index: 999999;
+  background: rgba(3, 6, 48, 0.979);
+}
+
+.ourworks .imageWrp {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: -4.5rem;
+  z-index: 22;
+}
+.yoo {
+  height: 7rem;
+  margin: 0;
+  padding-top: 1rem;
+  z-index: 10;
+}
+
+@media screen and (max-width: 760px) {
+  .ourworks .heading2 {
+    margin-top: 9rem;
+    padding-bottom: 0;
+  }
+  .ourworks .imageWrp {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
+@media screen and (min-width: 1600px) and (min-height: 600px) {
+  .ourworks .heading2 {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    padding-bottom: 0;
+  }
+  .ourworks .carouselWrapper {
+    height: 75vh;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .ourworks .image {
+    width: 5.2rem;
+    height: 72px;
+    margin: 1.7rem;
+    padding-left: 2.3rem;
+    padding-top: 0.6rem;
+  }
+
+  .ourworks .pic {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .ourworks .imageWrp {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: -3.5rem;
+  }
+}

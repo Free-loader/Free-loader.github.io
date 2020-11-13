@@ -1,0 +1,102 @@
+.identity-container {
+  position: absolute;
+  display: grid;
+  grid-row-gap: 5rem;
+  right: 0;
+}
+
+.identity-container p {
+  font-size: 1.9rem;
+  letter-spacing: 0.15rem;
+  color: var(--ThemeWhite);
+  font-family: var(--Roboto);
+}
+
+.identity-container .row-1 {
+  display: flex;
+  gap: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.identity-container .row-1 .persona {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.2rem solid var(--ThemeBlue);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  line-height: 25rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.identity-container .row-2 {
+  display: flex;
+  gap: 5rem;
+  margin-left: 8rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.identity-container .row-2 .persona {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.2rem solid var(--ThemeBlue);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  line-height: 25rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.identity-container .row-1 .persona-1 {
+  background-image: url('https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/avatar/min/boy.jpeg');
+}
+
+.identity-container .row-1 .persona-2 {
+  background-image: url('https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/avatar/min/boy.jpeg');
+}
+
+.identity-container .row-1 .persona-3 {
+  background-image: url('https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/avatar/min/boy.jpeg');
+}
+
+.identity-container .row-2 .persona-4 {
+  background-image: url('https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/avatar/min/girl.jpeg');
+}
+
+.identity-container .row-2 .persona-5 {
+  background-image: url('https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/avatar/min/girl.jpeg');
+}
+
+@media screen and (max-width: 730px) {
+  .identity-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 4rem;
+    z-index: 10;
+  }
+
+  .identity-container .row-2 {
+    margin: 0;
+  }
+
+  .identity-container p {
+    font-size: 1rem;
+  }
+
+  .identity-container .row-1 .persona,
+  .identity-container .row-2 .persona {
+    height: 2.7rem;
+    width: 2.7rem;
+    line-height: 7rem;
+    display: flex;
+    justify-content: center;
+  }
+}

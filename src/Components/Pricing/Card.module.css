@@ -1,0 +1,428 @@
+.card {
+  width: 450px;
+  height: 250px;
+  background-color: #e5e9e1;
+  box-shadow: 5px 5px 10px rgba(61, 55, 55, 0.548);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+  border: 2px solid rgb(255, 255, 255);
+
+  --length: 180px;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(-45deg, #050222, #50038f, #0d0e49, #050222, #060747, #050222);
+
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card.green .additional {
+  background: linear-gradient(#92bca6, #a2ccb6);
+}
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 10%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.452);
+
+  border-radius: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  margin-bottom: 0;
+  font-size: 3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(0deg, rgb(12, 12, 43), white);
+}
+
+.card.green .additional .more-info h1 {
+  color: #224c36;
+}
+
+.card .additional .coords {
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.card.green .additional .coords {
+  color: #325c46;
+}
+
+.card .additional .coords span + span {
+  margin-left: 2.5rem;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card.green .additional .stats {
+  color: #325c46;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
+}
+
+.general p {
+  padding-top: 40px;
+  font-size: 1.7rem;
+}
+
+.icons1 {
+  width: 100px;
+  height: 100px;
+  padding: 1.5rem;
+  margin-top: 5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 80%;
+  height: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.emptybar p {
+  visibility: hidden;
+  content: '';
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 85%, rgba(255, 186, 0, 1) 100%);
+  transition: 0.6 ease-out;
+  transition-delay: 0s;
+  margin-left: 20px;
+}
+
+.card:hover .filledbar {
+  width: var(--length);
+  transition: 0.4s ease-out;
+  transition-delay: 0.6s;
+  margin-left: 20px;
+}
+
+.filledbar2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(90deg, rgba(0, 154, 217, 1) 0%, rgba(217, 147, 0, 1) 85%, rgba(255, 186, 0, 1) 100%);
+  transition: 0.6 ease-out;
+  transition-delay: 0s;
+  margin-left: 20px;
+}
+
+.card:hover .filledbar2 {
+  width: 120px;
+  transition: 0.4s ease-out;
+  transition-delay: 0.6s;
+  margin-left: 20px;
+}
+
+.circle {
+  position: absolute;
+  top: 67px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: #fff;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.8s ease-out;
+}
+
+.card svg {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 0;
+  transition: 0.8s ease-out;
+}
+
+.svg-wrapper {
+  width: 120px;
+  margin-left: 13px;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+.shape {
+  stroke-dasharray: 80 70;
+  stroke-dashoffset: -170;
+  stroke-width: 4px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 0.5s, stroke-dashoffset 0.5s, stroke-dasharray 0.5s;
+  padding-left: 10px;
+}
+
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: white;
+  top: -32px;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  margin-left: 28px;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 4px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 360;
+  cursor: pointer;
+}
+.prc1 {
+  font-size: 2.7rem;
+  color: white;
+  position: absolute;
+  top: -40px;
+  left: 183px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -moz-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 70%,
+    rgba(255, 186, 0, 1) 100%
+  );
+}
+
+@media screen and (max-width: 456px) {
+  .card {
+    width: 320px;
+    height: 150px;
+  }
+  .card h1 {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  .card .additional .user-card .level,
+  .card .additional .user-card .points {
+    top: 0.5%;
+  }
+  .icons1 {
+    width: 80px;
+    height: 80px;
+    padding: 1.5rem;
+    margin-top: 0rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .circle {
+    visibility: hidden;
+  }
+  .text {
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: white;
+    top: -30px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+  .svg-wrapper {
+    width: 80px;
+    margin-left: 13px;
+    z-index: 2;
+    margin-top: 0px;
+  }
+
+  .card .additional .stats {
+    visibility: hidden;
+  }
+
+  .card .general h1 {
+    font-size: 1.6rem;
+    margin-left: 120px;
+  }
+  .general p {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    margin-left: 140px;
+  }
+  .card .general .more {
+    visibility: hidden;
+  }
+  .card .additional .coords {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 2rem;
+  }
+
+  .emptybar {
+    background-color: #2e3033;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .bar {
+    width: 40%;
+    bottom: 10px;
+  }
+
+  .card .additional .more-info h1 {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    left: -70px;
+    background-clip: none;
+    -webkit-text-fill-color: none;
+    background-clip: none;
+    -moz-text-fill-color: none;
+    background-image: none;
+  }
+
+  .svg-wrapper:hover .shape {
+    stroke-width: 4px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 360;
+    cursor: pointer;
+  }
+}

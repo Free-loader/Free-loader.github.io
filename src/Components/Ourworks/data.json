@@ -1,0 +1,134 @@
+{
+  "app": [
+    {
+      "title": "Jeev AI",
+      "subtitle": "App",
+      "description": "Designed to connect patients to doctors.",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/app/dr.png"
+    },
+    {
+      "title": "EasyTrans",
+      "subtitle": "App",
+      "description": "A Smart Online Public Transport App Designed In IBM Hackathon.",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/app/EasyTransApp.png"
+    },
+    {
+      "title": "HelloNews",
+      "subtitle": "App",
+      "description": "Realtime News From Several Sources.",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/app/News.jpeg"
+    }
+  ],
+  "graphics": [
+    {
+      "title": "Covid-19",
+      "subtitle": "Graphics",
+      "description": "Covid-19 Awareness Digital Poster In Adobe Photoshop.",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/graphics/Covid.png"
+    },
+    {
+      "title": "Days To Go",
+      "subtitle": "Graphics",
+      "description": "Days To Go Countdown In Adobe After Effects",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/graphics/4days.png"
+    },
+    {
+      "title": "Days To Go",
+      "subtitle": "Graphics",
+      "description": "Days To Go Countdown In Adobe After Effects",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/graphics/3days.png"
+    },
+    {
+      "title": "Digital Poster",
+      "subtitle": "Graphics",
+      "description": "Social Media Digial Poster",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/graphics/Poster.png"
+    },
+    {
+      "title": "UWGT Ltd.",
+      "subtitle": "Graphics",
+      "description": "Company Brand Logo",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/graphics/UwLogo.png"
+    }
+  ],
+  "website": [
+    {
+      "title": "Easy Trans",
+      "subtitle": "Website",
+      "description": "Promotional Website of the self made Easy Trans App.",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/covid.png"
+    },
+    {
+      "title": "E-learning",
+      "subtitle": "Web Design",
+      "description": "Prototype web design",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/elearning.png"
+    },
+    {
+      "title": "Myntra Website",
+      "subtitle": "Website",
+      "description": "Clone of Myntra Website",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/Myntra.png"
+    },
+    {
+      "title": "Amazon Website",
+      "subtitle": "Website",
+      "description": "Clone of Amazon Website",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/Amazon.png"
+    },
+    {
+      "title": "Covid Tracker",
+      "subtitle": "Web App",
+      "description": "Real Time Corona Status",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/CovidTracker.png"
+    },
+    {
+      "title": "Netflix web app",
+      "subtitle": "Web App",
+      "description": "Clone of Netflix",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/Netflix.png"
+    },
+    {
+      "title": "Instagram",
+      "subtitle": "Web App",
+      "description": "Instagram Web App",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/Instagram.png"
+    },
+    {
+      "title": "Hangman",
+      "subtitle": "Web App",
+      "description": "Real Time Hangman Game",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/Hangman.png"
+    },
+    {
+      "title": "Prototype",
+      "subtitle": "Web Design",
+      "description": "Prototype Design",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/pubg.png"
+    },
+    {
+      "title": "Prototype",
+      "subtitle": "Web Design",
+      "description": "Prototype Design",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/music.PNG"
+    },
+    {
+      "title": "GTA Prototype",
+      "subtitle": "Web Design",
+      "description": "Prototype Web Design",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/gta.png"
+    },
+    {
+      "title": "Spotify",
+      "subtitle": "Web App",
+      "description": "Clone of Spotify",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/Spotify.png"
+    },
+    {
+      "title": "Twitter App",
+      "subtitle": "Web app",
+      "description": "Clone of Twitter",
+      "image": "https://raw.githubusercontent.com/Team-Aaroham/freeloader-web/master/src/Images/ourworks/web/twitter.png"
+    }
+  ]
+}

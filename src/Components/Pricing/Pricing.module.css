@@ -1,0 +1,32 @@
+.main-container {
+  background-image: url('../../Images/service.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-container .prices {
+  text-align: center;
+}
+
+.main-container .prices p {
+  font-size: 100px;
+  padding-bottom: 30px;
+  font-family: var(--Roboto);
+  margin-top: 5rem;
+  color: white;
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: var(--ThemeWhite);
+}
+
+.center {
+  font-family: var(--Abel);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

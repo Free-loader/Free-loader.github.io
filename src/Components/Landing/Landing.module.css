@@ -1,0 +1,78 @@
+.main-container {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../../Images/bg-landing.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container .btn-main {
+  display: flex;
+  width: 90rem;
+  padding-top: 2rem;
+  padding-left: 10rem;
+}
+
+.main-container .btn-main .btn-abt {
+  background: var(--ThemePink);
+  border-radius: 4rem;
+  padding: 1.2rem 4rem;
+  color: var(--ThemeWhite);
+  font-family: var(--Roboto);
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  align-items: center;
+  border: none;
+  display: flex;
+  margin-left: 6rem;
+  margin-top: 4rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.main-container .btn-main .btn-abt .icon-arrow-down {
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 4rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+  padding-right: 1rem;
+}
+
+.main-container .btn-main .btn-abt p {
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.main-container .btn-main .btn-play {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.2rem solid var(--ThemeBlue);
+  border-radius: 50%;
+  margin-top: 4rem;
+  margin-left: 5rem;
+  color: var(--ThemeWhite);
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.main-container .btn-main .btn-play .icon-play {
+  margin-top: 1.5rem;
+  margin-left: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.main-container svg {
+  fill: white;
+}
+
+@media screen and (max-width: 735px) {
+  .main-container .btn-main {
+    margin-left: -12.5rem;
+    padding-top: 5rem;
+    padding-bottom: 10px;
+  }
+}

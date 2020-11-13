@@ -1,0 +1,106 @@
+.main-flex {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all ease 1s;
+  height: 100%;
+  min-width: 100vw;
+  margin-top: 20rem;
+}
+
+.main-flex .main-column {
+  margin-left: 10rem;
+}
+
+.main-flex .main-column h1 {
+  font-family: var(--Roboto);
+  font-weight: 700;
+  font-size: 10rem;
+  color: var(--ThemeWhite);
+  margin-left: 6rem;
+}
+
+.main-flex .main-column .row-flex {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.main-flex .main-column .row-flex .page-finder h2 {
+  font-family: var(--Roboto);
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: var(--ThemeWhite);
+}
+
+.main-flex .main-column .row-flex .page-finder h4 {
+  font-family: var(--Roboto);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--ThemeBlue);
+  padding-left: 0.1rem;
+}
+
+.main-flex .main-column .row-flex .vertical-line {
+  height: 10rem;
+  width: 0.2rem;
+  background-color: var(--ThemeBlue);
+  margin: -0.5rem 1.5rem;
+}
+
+.main-flex .main-column .row-flex p {
+  font-family: var(--Poppins);
+  font-weight: 200;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  width: 50rem;
+  color: var(--ThemeWhite);
+  margin-top: 0.7rem;
+}
+
+@media screen and (max-width: 986px) {
+  .main-flex .main-column h1 {
+    font-size: 14vw;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .main-flex .main-column {
+    margin-left: 2rem;
+  }
+  .main-flex .main-column h1 {
+    font-size: 14vw;
+    margin-left: 2rem;
+    margin-top: -5rem;
+  }
+  .main-flex .main-column .row-flex .page-finder h2,
+  .main-flex .main-column .row-flex .page-finder h4 {
+    display: none;
+  }
+
+  .main-flex .main-column .row-flex p {
+    width: 75vw;
+  }
+
+  .main-flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .main-flex .main-column .row-flex .vertical-line {
+    height: 12.5rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .main-flex .main-column .row-flex .vertical-line {
+    height: 14.5rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .main-flex .main-column .row-flex .vertical-line {
+    height: 16rem;
+  }
+}
