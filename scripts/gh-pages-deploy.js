@@ -7,7 +7,7 @@ const e_arrows = emoji.get('fast_forward');
 const e_rocket = emoji.get('rocket');
 
 const master = 'master';
-const deploy = 'build';
+const deploy = 'build'; //gh-pages
 
 (async () => {
   try {
